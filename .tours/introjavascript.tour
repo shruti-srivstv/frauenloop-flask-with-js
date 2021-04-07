@@ -1,0 +1,75 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "IntroJavaScript",
+  "steps": [
+    {
+      "file": "index.html",
+      "description": "### Include JavaScript in HTML\nWe need to as a link to our JavaScript file in the html-document. For this, we use a `script`-tag and add the path to our JavaScript file in the `src`-attribute. You can put the link in the `head` of the document or at the very end of the `body`.",
+      "line": 11
+    },
+    {
+      "file": "script.js",
+      "description": "### Using the console.log()\nWith the console.log() we can print content to the console. This is usefull when we want to check that we added to java-script file to our html-file correctly. If you open the brower and see the text in the console, everything is set up correctly! We also use the console.log to debugg our code.",
+      "line": 2,
+      "title": "get to know the console.log()"
+    },
+    {
+      "file": "script.js",
+      "description": "### Create an object\n\nHere we create our first variable with the name \"shirt\". The varaible is cerated (or declared) with the keyword `let`. In the varaible we store an object. Whenever we want to use the object, we will refere to it by the name 'shirt'",
+      "line": 5,
+      "title": "create an object"
+    },
+    {
+      "file": "script.js",
+      "description": "### Print the object on the console\n\nSee the content of the variable 'shirt' on the console of your browser.",
+      "line": 11,
+      "title": "log an object"
+    },
+    {
+      "file": "script.js",
+      "description": "### Create an array\n\nHere we create an `array`. It is the JavaScript way to create a list. An array can contain data of any kind: strings, numbers, booleans, objects, or even other arrays.  Here we create a list of our shops products, i.e. we create an array of objects. \n",
+      "line": 33,
+      "title": "create an array"
+    },
+    {
+      "file": "script.js",
+      "description": "### Create an empty array\n\nLet's pretend we are browsing the store, and find something we like: we want to put our items in the shopping basket. We can think of our basket as a collection of things, so we will use an array for this. In the beginning, the basket is empty, so we nees an empty array to start with.\n\nHere we create the empty array using `[]`. We store the array in the variable 'basket'. In the next step we will add our shopping items to the basket. ",
+      "line": 38,
+      "title": "create an empty array"
+    },
+    {
+      "file": "script.js",
+      "description": "### Create a function\nThis is a function. There are 2 different ways to write functions  in JavaScript. I use the newer style (ES6-arrow function).  An other way to write the same function is using the key word `function`: \n\n``` javaScript \nfunction addToBasket (item) {\n basket.push(item)\n}\n``` \n\nYou can think of functions as machines. They take an input, do something, and might return an output. This function will take an item as input (the item we want to put into our shoppingbasket) and will change the content of the array 'basket'. This function does not return anything.  ",
+      "line": 41,
+      "title": "create a function"
+    },
+    {
+      "file": "script.js",
+      "description": "### Add an item to an array\n\nIn the function, we take the item and add it to the basket using the array method `push`. This method actually is a function which we can use only on arrays. It takes the item as input and adds the item to the array we use it on, in this case on the array `basket`. ",
+      "line": 42,
+      "title": "add an Item to an Array"
+    },
+    {
+      "file": "script.js",
+      "description": "### Call the function\nOnce we have defined a function, we also want to use it. This is called \"calling the function\". The function is called by typing the name of the function and adding `()`. When we call the function, we also decide what the input actually will be, by adding this in the `()`. Here we use 'socks' as input.  We can call a function many times.",
+      "line": 45,
+      "title": "call the function"
+    },
+    {
+      "file": "script.js",
+      "description": "### Use a function to calculate the sum\n\nWe are done shopping now and need to pay for our items. First we need to find out how much our products cost. For this we need a function. This function takes any basket as input. When we call, it we pass our shopping basket to the function. \nThis function will look through the content of our basket and return the sum of the prize of all items in the basket. \n\nSteps in the function:\n1. In the beginning the sum is 0. \n2. We use a `for of` loop to go through the items in the basket. A  `for of` loop is a piece of code that we use with arrays. The code is repeated once for each element in the array, in our case once for each item in the basket.  \n3. In the loop, we look for the prize of each item and add the prize to the total sum. \n4. When the loop is done, the function returns the sum of all items we have shopped. ",
+      "line": 52
+    },
+    {
+      "file": "script.js",
+      "description": "### Calling a function with a return value\n\nThe function `checkout` has a return vaule. This means that the function has an output or a result. We want to use this return value later in the code, so we need to store it somewhere. Here we store it in the variable `sumToPay`.",
+      "line": 61
+    },
+    {
+      "file": "script.js",
+      "description": "### Using template literals\n\nIn this console.log we use template literals. This is indicated by the small backticks: \\` at the start and end of the text. When we write our strings this way, we can mix text with varaibles and it will add the content of the variable to the string! Here we use the variable `sumToPay` in the text.\n\nThats all for this tour! If you want to take the next tour about DOM-Manipulation, check out the branch \"dom\" in this repo by opening the commad line in the editor and typing \n>> git checkout dom\n\non the command line. You can also just click on the command above!",
+      "line": 65,
+      "title": "using template literals"
+    }
+  ]
+}
