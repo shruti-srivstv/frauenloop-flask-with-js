@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{heading}}
+{% endblock %}
+
+
+{% block content %}
+
+    {% include 'partials/jumbotron.html' %}
+
+    <h3>{{heading}}</h3>
+    <h2></h2>
+    <div>
+      <ul>
+        {% for x in foods %}
+          <li>{{ x }}</li>
+        {% endfor %}
+      </ul>      
+    </div>
+{% endblock%}
+   

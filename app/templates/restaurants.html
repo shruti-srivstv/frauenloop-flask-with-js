@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+    
+    {% block title %}
+        {{heading}}
+    {% endblock %}
+
+    {% block content %}
+    
+    {% include 'partials/jumbotron.html' %}
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>{{heading}} </h1>
+    <h2> {{subheading}} </h2>
+    
+    <div>
+      <ul>
+        {% for restaurant in restaurants %}
+            {% if restaurant.foodora_delivery == True %}
+                <li>{{ restaurant.name }}, {{restaurant.google_reviews}}, {{restaurant.foodora_delivery}} </li>
+            {% endif %}    
+        {% endfor %}
+      </ul>      
+    </div>
+
+    {% endblock%}

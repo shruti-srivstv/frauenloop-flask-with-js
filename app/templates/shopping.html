@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>My shop</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Hi, this is my online shop!</h1>
+
+    <div class="products card-deck">
+      <div class="card" style="width: 18rem;">
+        <img src="./static/img/shirt.jpeg" class="card-img-top" alt="t-shirt">
+        <div class="card-body">
+          <h5 class="card-title">T-Shirt</h5>
+          <p class="card-text">A nice cotton t-shirt</p>
+          <a href="#" class="btn btn-primary" id='T-Shirt'>Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./static/img/shorts.jpg" class="card-img-top" alt="shorts">
+        <div class="card-body">
+          <h5 class="card-title">Shorts</h5>
+          <p class="card-text">A pair of jeans shorts</p>
+          <a href="#" class="btn btn-primary" id='Shorts'>Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="./static/img/socks.jpg" class="card-img-top" alt="socks">
+        <div class="card-body">
+          <h5 class="card-title">Socks</h5>
+          <p class="card-text">Socks for every day</p>
+          <a href="#" class="btn btn-primary" id='Socks'>Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="basket mt-4"> 
+      <h3>This is in your shopping basket:</h3>
+      <!-- add a list dynamically -->
+      <ul class="listOfItems"></ul>
+      <button type="button" class="buy btn btn-primary">Go to check out</button>
+    </div>
+
+    <div class="checkout mt-4"> 
+      <h3>Amount to pay:</h3>
+      <!-- add amount dynamically -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
